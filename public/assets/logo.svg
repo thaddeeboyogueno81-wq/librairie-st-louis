@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 150" role="img" aria-label="Librairie Papeterie Saint Louis">
+  <g fill="none" stroke="#252525" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#F2C28B" stroke-width="6" d="M210 30v82M210 106c-34-27-73-38-119-26V55c46-12 85-2 119 27Z"/>
+    <path fill="#E9AE70" stroke-width="6" d="M210 106c34-27 73-38 119-26V55c-46-12-85-2-119 27Z"/>
+    <path fill="#252525" stroke-width="5" d="M210 15v72l-12-12 12 25 12-25-12 12Z"/>
+    <path stroke-width="4" d="M111 82c35-7 67 1 99 24M309 82c-35-7-67 1-99 24"/>
+  </g>
+  <text x="210" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" letter-spacing="3" fill="#252525">LIBRAIRIE PAPETERIE</text>
+  <text x="210" y="147" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="17" letter-spacing="2" fill="#C7864A">SAINT LOUIS</text>
+</svg>

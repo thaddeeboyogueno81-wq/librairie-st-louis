@@ -1,0 +1,16 @@
+{
+  "name": "librairie-papeterie-saint-louis-netlify",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Version Netlify de la Librairie Papeterie Saint Louis à Yaoundé : catalogue, commandes, livraison et administration.",
+  "scripts": {
+    "check": "node --check netlify/functions/api.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@netlify/blobs": "latest"
+  }
+}
