@@ -6,7 +6,7 @@
   "description": "Version Netlify de la Librairie Papeterie Saint Louis à Yaoundé.",
   "scripts": {
     "check": "node --check netlify/functions/api.mjs",
-    "check:admin": "node -e \"const fs=require('fs');const s=fs.readFileSync('public/admin.html','utf8');if((s.match(/<script>/g)||[]).length!==(s.match(/<\\\\/script>/g)||[]).length)process.exit(1);console.log('admin markup ok')\"",
+    "check:admin": "node -e \"const fs=require('fs');const s=fs.readFileSync('public/admin.html','utf8');if((s.split('<script>').length-1)!==(s.split('</script>').length-1))process.exit(1);console.log('admin markup ok')\"",
     "check:all": "npm run check && npm run check:admin"
   },
   "engines": {
