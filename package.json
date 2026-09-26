@@ -1,12 +1,18 @@
 {
   "name": "librairie-papeterie-saint-louis-netlify",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "private": true,
   "type": "module",
   "description": "Version Netlify de la Librairie Papeterie Saint Louis à Yaoundé.",
   "scripts": {
-    "check": "node --check netlify/functions/api.mjs"
+    "check": "node --check netlify/functions/api.mjs",
+    "check:admin": "node -e \"const fs=require('fs');const s=fs.readFileSync('public/admin.html','utf8');if((s.match(/<script>/g)||[]).length!==(s.match(/<\\\\/script>/g)||[]).length)process.exit(1);console.log('admin markup ok')\"",
+    "check:all": "npm run check && npm run check:admin"
   },
-  "engines": { "node": ">=22" },
-  "dependencies": { "@netlify/blobs": "latest" }
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@netlify/blobs": "11.1.1"
+  }
 }
